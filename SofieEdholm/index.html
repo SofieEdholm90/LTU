@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="sv">
+<body>
+    <!-- Definierar attribut för sidan inom header, i detta fallet titlen för hemsidan-->
+    <head>
+        <meta charset="utf-8">
+        <title>Sofies presentation</title>
+    </head>
+
+    <!-- Separerar headern i en container med framtida classatribut för att stylea det via en css fil -->
+    <div class="bioHeaderContainer">
+        <h1 style="text-align:center;">Välkommen</h1> <!-- Använder inline styling här för att visa att jag kan använda det -->
+        <h2 style="text-align:center;">till min HTML-sida</h2>
+    </div>
+    
+    <!-- min profilbild med id-selector för styling -->
+    <img src="Sofie.jpeg" id="myProfilePicture"/>
+
+    <!-- subHeaderContainer för styling, i detta fall text align. -->
+    <div class="subHeaderContainer">
+            <h3>Hej! Mitt namn är Sofie Edholm </h3>
+    </div>
+
+    <!-- bioContainer -->
+    <div id="bioContainer">
+            <i>
+                Jag bor och jobbar i <strong>Märsta</strong> som kassörska för tillfället. 
+                Där jag också bor tillsammans med min sambo och våra två hundar. 
+                Förutom att jobba så läser jag Webbutveckling I på distans 
+                via Luleå tekniska universitet. Jag fick upp intresset för kodning 
+                tack vare min sambo som jobbar som programmerare. Och jag är nöjd över mitt val! 
+                För att detta är riktigt kul att lära sig. 
+                I framtiden så siktar jag på att jobba inom <em>Webbdesign</em>. 
+                På min fritid så ägnar jag mig åt matlagning, 
+                våra hundar och samt att lära mig mer inom Webbdesign.
+            </i>
+    </div>
+    
+    <div id="bioContainer2">
+        <h3>
+            <b>Här nedan kommer lite saker som jag för övrigt tycker om:</b>
+        </h3>
+    </div>
+
+    <!-- UL list för att visa listor i punktformat-->
+    <div class="listContainer">
+        <ul id="unorderedList">
+            <li>Älskar kaffe.</li>
+            <li>Tycker om att dricka öl med mina vänner.</li>
+            <li>Gillar att kolla yputube-videos, för skojs skull samt i utbildningssyfte.</li>
+            <li>Älskar att kolla på olika matlagningsprogram.</li>
+            <li>Tycker om att baka.</li>
+        </ul>
+    </div>
+
+    <!-- En container med en h2 header och en ordered list-->
+    <div class="bioContainer3">
+        <h3>
+            <b>Här kommer en liten rolig lista på saker som jag inte tycker om:</b>
+        </h3>
+        <ol id="orderedList">
+            <li>När folk inte håller tider.</li>
+            <li>Folk som prasslar med saker.</li>
+            <li>Folk som envisas med att ringa istället för smsa.</li>
+            <li>Jag äter inte helfabrikat mat.</li>
+        </ol>
+    </div>
+    
+    <!-- referenscontainer med en länk och titelattribut, öppnas på ny sida för UX-->
+    <div class="referenceContainer">
+        <p>
+            <a href="file:///Users/sofieedholm/Desktop/skola/index.html/analys.html/analys.html" title="Läs mer här..." target="_blank">Här kan du dessutom läsa min Analysrapport 1a.</a>
+        </p>
+    </div>
+
+    <!-- Styling without CSS file to display knowledege of HTML CSS styling without linked files -->
+    <style>
+        body {
+            background-color: #faf2e4;
+            margin: 0 15%;
+            font-family: sans-serif;
+            }
+        
+        h1 {
+            text-align: center;
+            font-family: serif;
+            font-weight: normal;
+            text-transform: uppercase;
+            border-bottom: 1px solid #57b1dc;
+            margin-top: 30px;
+        }
+        
+        h2 {
+            text-align: center;
+            font-family: serif;
+            font-weight: normal;
+            text-transform: uppercase;
+            color: #000000;
+            font-size: 1em;
+        }   
+ 
+        #bioContainer{
+            padding: 15px 25px;
+            border: 1px solid #ccc;
+            margin-top: 25px;
+        }   
+
+        #myProfilePicture{
+        display: block; 
+        margin-left: auto; 
+        margin-right: auto;
+        border-radius: 50%;
+        }   
+
+        .subHeaderContainer{
+        text-align: center;
+        font-weight: 600;
+        }
+
+    </style>
+</body>
+</html>
